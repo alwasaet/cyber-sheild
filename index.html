@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cybershield</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
+    <link rel="stylesheet" href="styles/app-ltr.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body class="home">
+    <header class="c-header" role="header">
+      <div class="o-wrapper">
+        <h1 class="c-brand">
+          <a href="/">
+            <img
+              class="c-brand__image full"
+              src="images/logo_cybershield.svg"
+              alt=""
+            />
+            <img
+              class="c-brand__image mini"
+              src="images/logo-mini.svg"
+              alt=""
+            />
+          </a>
+        </h1>
+        <div class="c-header__item">
+          <div class="c-header__actions">
+            <a href="login.html" class="button button--primary">Login</a>
+            <a href="request-demo.html" class="button button--outline"
+              >Request a demo</a
+            >
+          </div>
+          <a class="lang" href="/ar">
+            <svg
+              width="32px"
+              height="22px"
+              viewBox="0 0 39 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>عربي</title>
+              <g
+                id="UI"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <path
+                  d="M25.65,12 C29.29,12 31.396,11.766 34.75,10.83 L38.13,9.894 L37.636,7.866 L35.556,8.386 C34.724,8.594 33.918,8.698 33.138,8.698 C30.798,8.698 29.03,7.242 29.03,5.292 C29.03,3.498 30.096,2.302 32.046,2.302 C33.372,2.302 34.36,2.796 35.244,3.914 L36.544,2.406 C35.582,0.924 34.1,0.066 32.15,0.066 C29.42,0.066 27.21,2.198 27.21,5.292 C27.21,7.112 28.172,8.802 29.446,9.634 L29.446,9.764 L26.17,9.764 L25.65,10.284 L25.65,12 Z M17.278,18.24 C21.802,18.24 23.414,15.38 23.674,12 L25.65,12 L26.17,11.48 L26.17,9.764 L23.7,9.764 C23.648,8.724 23.518,7.658 23.31,6.462 L22.972,4.486 L21.152,4.85 L21.698,7.788 C21.88,8.776 21.984,9.92 21.984,10.934 C21.984,13.638 21.074,16.004 17.278,16.004 L16.316,16.004 L16.316,18.24 L17.278,18.24 Z M8.022,18.24 C13.716,18.24 17.096,15.458 17.096,12.208 C17.096,11.116 16.602,10.466 15.51,10.18 L14.054,9.79 L14.054,9.686 C15.094,9.01 15.588,8.022 15.588,6.592 C15.588,5.89 15.484,4.876 15.25,3.186 L14.938,1.028 L13.118,1.314 L13.482,3.472 C13.742,5.058 13.82,5.968 13.82,6.592 C13.82,8.282 12.858,8.776 10.83,8.776 L9.764,8.776 L9.764,10.908 L15.38,12.156 L15.38,12.208 C15.38,13.976 12.936,15.9 8.802,15.9 L7.242,15.9 C3.81,15.9 1.756,14.184 1.756,11.246 C1.756,9.946 2.224,8.386 2.874,7.034 L1.262,6.54 C0.508,8.308 0.04,10.154 0.04,11.74 C0.04,15.822 3.004,18.24 8.022,18.24 Z M15.692,21.386 C16.368,21.386 16.836,20.996 16.836,20.112 C16.836,19.228 16.368,18.838 15.692,18.838 L15.406,18.838 C14.704,18.838 14.262,19.228 14.262,20.112 C14.262,20.996 14.704,21.386 15.406,21.386 L15.692,21.386 Z M9.842,23.466 C10.518,23.466 10.986,23.076 10.986,22.192 C10.986,21.308 10.518,20.918 9.842,20.918 L9.556,20.918 C8.854,20.918 8.412,21.308 8.412,22.192 C8.412,23.076 8.854,23.466 9.556,23.466 L9.842,23.466 Z M6.488,23.466 C7.164,23.466 7.632,23.076 7.632,22.192 C7.632,21.308 7.164,20.918 6.488,20.918 L6.202,20.918 C5.5,20.918 5.058,21.308 5.058,22.192 C5.058,23.076 5.5,23.466 6.202,23.466 L6.488,23.466 Z"
+                  id="arabi"
+                  fill="#222222"
+                  fill-rule="nonzero"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="circles"
+      role="presentation"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
+      data-aos-easing="linear"
+    >
+      <img class="circles__item one" src="images/circle.svg" alt="" />
+      <img class="circles__item two" src="images/circle.svg" alt="" />
+      <!-- <img class="circles__item three" src="images/circle.svg" alt="" /> -->
+      <img class="circles__item four" src="images/circle.svg" alt="" />
+    </div>
+
+    <main>
+      <section class="c-hero">
+        <div class="o-wrapper">
+          <div class="c-hero__wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+            >
+              <h2 class="c-hero__title">
+                Cybersecurity <span>Awareness</span> Training
+              </h2>
+              <p class="c-hero__desc">
+                Empower your employees to be the strongest link in the
+                cybersecurity chain.
+              </p>
+              <p class="c-hero__actions">
+                <a href="login.html" class="button button--primary">Login</a>
+                <a href="request-demo.html" class="button button--outline"
+                  >Request a demo</a
+                >
+              </p>
+            </div>
+            <div class="c-hero__image">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-delay="0"
+                src="images/image-1.png"
+                draggable="false"
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-delay="150"
+                src="images/image-2.png"
+                draggable="false"
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-delay="200"
+                src="images/image-3.png"
+                draggable="false"
+                alt=""
+              />
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-delay="250"
+                src="images/image-4.png"
+                draggable="false"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section">
+        <div class="o-wrapper">
+          <video
+            controls
+            preload="none"
+            poster="images/poster.png"
+            style="object-fit: cover"
+            controlslist="nodownload"
+          >
+            <source src="images/cybershield.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="c-section c-section--features">
+        <div
+          class="o-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="linear"
+        >
+          <h3 class="c-section__title">Features</h3>
+          <div class="o-grid o-grid--4">
+            <div class="o-grid__item">
+              <div>
+                <h4 class="feature feature-1">Interactive Training</h4>
+                <p>
+                  Interactive training modules – Simulated phishing attacks and
+                  challenge-based activity. Hands-on experiences in the specific
+                  domain knowledge.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <div>
+                <h4 class="feature feature-2">Gamification</h4>
+                <p>
+                  We bring engagement in its very best form by implementing
+                  levels, badges, points and cybersecurity-heroes leaderboard.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <div>
+                <h4 class="feature feature-3">Bite-Size Learning</h4>
+                <p>
+                  Let’s face it! No one wants to take another mandatory long and
+                  boring course. Our content was designed to be consumed in
+                  smaller chunks of knowledge. It can be consumed easily with
+                  better retention of information.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <div>
+                <h4 class="feature feature-4">Continuous Learning</h4>
+                <p>
+                  Our reporting connects your goals with evaluations. It
+                  delivers insights for continuous incremental learning for
+                  individual learners and groups of learners alike
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-section c-section--centered">
+        <div class="o-wrapper">
+          <h3 class="c-section__title">How Can We Help</h3>
+          <div class="o-grid o-grid--3">
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+              <img src="images/full-time-academy.svg" alt="about-academy" />
+              <h4>About</h4>
+              <p>
+                Providing cybersecurity to your organization is not onetime
+                task. It’s a continuous and dynamic process. Similarly, our
+                product is designed to deliver dynamic content based on your
+                staff real-life needs.
+              </p>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <img src="images/part-time-academy.svg" alt="about-academy" />
+              <h4>Features</h4>
+              <p>
+                Our solution provides content in different formats: elearning
+                modules, posters, animations and internal communication
+                messages. All are monitored to provide you with real-time
+                insight of the users' engagement and progress throughout their
+                learning journey.
+              </p>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <img src="images/choose-academy.svg" alt="about-academy" />
+              <h4>Approach</h4>
+              <p>
+                There is no one-size-fits-all. Our topics are mapped to
+                industry-standards competency model. It allows you to map your
+                employees’ knowledge and performance based on the topic
+                competency level and create a tailored made solution in a few
+                mins.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-section">
+        <div
+          class="o-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="linear"
+        >
+          <h3 class="c-section__title">Our Cybersecurity Program Approach</h3>
+          <div class="o-grid o-grid--2">
+            <div class="o-grid__item">
+              <img src="images/icon-why-us-01.svg" alt="about-academy" />
+              <div>
+                <h4>Human-Centered Design</h4>
+                <p>
+                  Before we deliver our program to you, we do an in-depth
+                  analysis of your staff. Our solution will be tailored made as
+                  per users need/experience/role.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <img src="images/icon-why-us-03.svg" alt="about-academy" />
+              <div>
+                <h4>Learning in Daily Routine</h4>
+                <p>
+                  We integrate learning in users' daily routine, we bring
+                  relevance to their daily work.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <img src="images/icon-why-us-02.svg" alt="about-academy" />
+              <div>
+                <h4>Implementation aligned with business goals</h4>
+                <p>
+                  Successful delivery and implementation should be aligned with
+                  your business goals and KPIs.
+                </p>
+              </div>
+            </div>
+            <div class="o-grid__item">
+              <img src="images/icon-why-us-04.svg" alt="about-academy" />
+              <div>
+                <h4>Actionable Reporting</h4>
+                <p>
+                  Our reports go beyond the merit of completion. We monitor the
+                  engagement and behavioral changes that are required from the
+                  awareness program.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section c-section--results">
+        <div class="o-wrapper">
+          <h3 class="c-section__title">The Results You Can Expect</h3>
+          <div class="o-grid o-grid--4">
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="0"
+              data-aos-easing="linear"
+            >
+              <div>
+                <img src="images/icons/003-check.svg" alt="" />
+                <h4 class="">Security Assurance</h4>
+              </div>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              data-aos-easing="linear"
+            >
+              <div>
+                <img src="images/icons/002-arrow.svg" alt="" />
+                <h4 class="">Reduction in Cyber Incidents</h4>
+              </div>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+              data-aos-easing="linear"
+            >
+              <div>
+                <img src="images/icons/001-shield.svg" alt="" />
+                <h4 class="">Better compliance with your standards</h4>
+              </div>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="400"
+              data-aos-easing="linear"
+            >
+              <div>
+                <img src="images/icons/005-chat.svg" alt="" />
+                <h4 class="">Clear communications</h4>
+              </div>
+            </div>
+            <div
+              class="o-grid__item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="500"
+              data-aos-easing="linear"
+            >
+              <div>
+                <img src="images/icons/006-self-awareness.svg" alt="" />
+                <h4 class="">Building culture of cybersecurity awareness</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer">
+      <p>Copyright © Cybershield</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+      })
+    </script>
+    <script>
+      ;(function () {
+        // Add event listener
+        document.addEventListener('mousemove', parallax)
+        const elem = document.querySelector('.circles')
+        const circle1 = document.querySelector('.circles__item.one')
+        const circle2 = document.querySelector('.circles__item.two')
+        const circle3 = document.querySelector('.circles__item.three')
+        const circle4 = document.querySelector('.circles__item.four')
+
+        function parallax(e) {
+          let _w = window.innerWidth / 2
+          let _h = window.innerHeight / 2
+          let _mouseX = e.clientX
+          let _mouseY = e.clientY
+
+          let _depth1 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          let _depth2 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          // let _depth3 = `${50 - (_mouseX - _w) * 0.01}px, ${
+          //   50 - (_mouseY - _h) * 0.01
+          // }px`;
+          let _depth4 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+
+          //let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+
+          //console.log(`scale(1.35) translate(${_depth1})`);
+
+          circle1.style.transform = `scale(1.35) translate(${_depth1})`
+          circle2.style.transform = `translate(${_depth2})`
+          // circle3.style.transform = `scale(2) translate(${_depth3})`;
+          circle4.style.transform = `scale(1.25) translate(${_depth4})`
+        }
+      })()
+
+      let scrollpos = window.scrollY
+      let header = document.querySelector('.c-header')
+      let hero = document.querySelector('.c-hero')
+      let body = document.querySelector('body')
+      const header_height = header.offsetHeight
+      const hero_height = hero.offsetHeight
+
+      function showHeader() {
+        header.classList.add('fade-in')
+        body.classList.add('fade-in')
+      }
+
+      function hideHeader() {
+        header.classList.remove('fade-in')
+        body.classList.remove('fade-in')
+      }
+
+      window.addEventListener('scroll', function () {
+        scrollpos = window.scrollY
+
+        if (scrollpos >= header_height + hero_height) {
+          showHeader()
+        } else {
+          hideHeader()
+        }
+
+        // console.log(scrollpos);
+      })
+    </script>
+  </body>
+</html>

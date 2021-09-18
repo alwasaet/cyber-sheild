@@ -1,0 +1,21 @@
+.o-grid {
+  display: grid;
+  margin-top: 64px;
+}
+
+.o-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 64px;
+
+}
+
+.o-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 64px;
+  grid-column-gap: 128px;
+
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}

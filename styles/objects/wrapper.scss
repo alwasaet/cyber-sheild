@@ -1,0 +1,16 @@
+.o-wrapper {
+    max-width: 85rem;
+    @include padding-left(32px);
+    @include padding-right(32px);
+    @include margin-left(auto);
+    @include margin-right(auto);
+}
+
+.o-wrapper--small {
+    max-width: 48rem;
+    @include padding-left(16px);
+    @include padding-right(16px);
+    @include margin-left(auto);
+    @include margin-right(auto);
+}
+

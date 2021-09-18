@@ -1,0 +1,87 @@
+.c-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  z-index: 100;
+  background-color: rgba(#fff, 0.5);
+
+  .o-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 500px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &.fade-in {
+    background-color: rgba(#fff, 1);
+    box-shadow: 0 3px 15px 0 rgba(#000, 0.1);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: 0.3s ease-out;
+
+    .c-header__actions {
+      display: block;
+    }
+  }
+}
+
+.c-header.fade-in {
+  .lang {
+    top: 1rem;
+  }
+}
+
+@include ltr {
+  @media (min-width: 501px) {
+    .lang {
+      margin-top: 4px;
+    }
+  }
+}
+
+.c-header__item {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    flex: 0 0 100%;
+
+    a {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+
+    .lang {
+      position: absolute;
+      @include right(1rem);
+      top: 2rem;
+    }
+  }
+}
+
+.c-header__actions {
+  @include margin-right(0.5rem);
+  display: none;
+
+  a:first-child {
+    @include margin-right(0.5rem);
+  }
+
+  @media (max-width: 500px) {
+    flex: 1;
+    text-align: center;
+    @include margin-right(0);
+  }
+}
+
+body.home {
+  padding-top: 88px;
+}

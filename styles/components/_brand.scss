@@ -1,0 +1,27 @@
+.c-brand {
+  margin: 0;
+
+  a {
+    display: block;
+  }
+}
+
+.c-brand__image {
+  display: block;
+  width: 200px;
+
+  &.mini {
+    width: initial;
+    height: 36px;
+
+    @media (min-width: 740px) {
+      display: none;
+    }
+  }
+
+  &.full {
+    @media (max-width: 739px) {
+      display: none;
+    }
+  }
+}

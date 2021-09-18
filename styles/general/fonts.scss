@@ -1,0 +1,23 @@
+@include rtl {
+  @font-face {
+    font-family: "IBMPlexSansArabic-Regular";
+    src: url("../fonts/IBMPlexSansArabic-Regular.woff2"),
+      url("/fonts/IBMPlexSansArabic-Regular.woff") format("woff"),
+      url("/fonts/IBMPlexSansArabic-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "IBMPlexSansArabic-Bold";
+    src: url("../fonts/IBMPlexSansArabic-Bold.woff2"),
+      url("/fonts/IBMPlexSansArabic-Bold.woff") format("woff"),
+      url("/fonts/IBMPlexSansArabic-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: "IBMPlexSansArabic-Regular";
+  }
+}

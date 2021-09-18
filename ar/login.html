@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>دخول</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
+    <link rel="stylesheet" href="../styles/app-rtl.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body class="inner-page">
+    <header class="header">
+      <div class="o-wrapper-small">
+        <h1 class="header__title">
+          <a href="/ar"><img src="../../images/Logo.svg" alt="" /></a>
+        </h1>
+      </div>
+    </header>
+
+    <div class="circles" role="presentation">
+      <img class="circles__item one" src="../images/circle-light.svg" alt="" />
+      <img class="circles__item two" src="../images/circle-light.svg" alt="" />
+      <!-- <img class="circles__item three" src="../images/circle.svg" alt="" /> -->
+      <img class="circles__item four" src="../images/circle-light.svg" alt="" />
+    </div>
+
+    <main class="main">
+      <div class="wrapper">
+        <h2 class="main__title">تسجيل الدخول</h2>
+        <form class="form" id="login-form">
+          <h5 id="alert" style="color: brown; display: none">Error</h5>
+          <div class="form__group">
+            <label for="email">البريد الالكتروني</label>
+            <input class="form__input" type="email" name="email" id="email" />
+          </div>
+
+          <div class="form__group mt-3">
+            <label for="password">كلمة المرور</label>
+            <input
+              class="form__input"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+
+          <a href="#" class="form__link">هل نسيت كلمة المرور؟</a>
+
+          <div class="checkbox-wrapper form__group">
+            <input
+              class="form__input"
+              type="checkbox"
+              hidden
+              name="sign-in"
+              id="check"
+            />
+            <label class="checkbox" for="check"
+              ><span>ابقني مسجلاً</span></label
+            >
+          </div>
+
+          <button class="button button--primary full" type="submit">
+            تسجبل الدخول
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="c-footer--inner">
+      <div class="wrapper">
+        <p>CyberShield © 2020</p>
+      </div>
+    </footer>
+
+    <script>
+      ;(function () {
+        // Add event listener
+        document.addEventListener('mousemove', parallax)
+        const elem = document.querySelector('.circles')
+        const circle1 = document.querySelector('.circles__item.one')
+        const circle2 = document.querySelector('.circles__item.two')
+        const circle3 = document.querySelector('.circles__item.three')
+        const circle4 = document.querySelector('.circles__item.four')
+
+        function parallax(e) {
+          let _w = window.innerWidth / 2
+          let _h = window.innerHeight / 2
+          let _mouseX = e.clientX
+          let _mouseY = e.clientY
+
+          let _depth1 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          let _depth2 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          // let _depth3 = `${50 - (_mouseX - _w) * 0.01}px, ${
+          //   50 - (_mouseY - _h) * 0.01
+          // }px`;
+          let _depth4 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+
+          //let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+
+          // console.log(`scale(1.35) translate(${_depth1})`);
+
+          circle1.style.transform = `scale(1.35) translate(${_depth1})`
+          circle2.style.transform = `translate(${_depth2})`
+          // circle3.style.transform = `scale(2) translate(${_depth3})`;
+          circle4.style.transform = `scale(1.25) translate(${_depth4})`
+        }
+      })()
+    </script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
