@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cybershield</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
+    <link rel="stylesheet" href="styles/app-ltr.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body class="inner-page">
+    <header class="header">
+      <div class="o-wrapper-small">
+        <h1 class="header__title">
+          <a href="/"><img src="images/Logo.svg" alt="" /></a>
+        </h1>
+      </div>
+    </header>
+
+    <div class="circles" role="presentation">
+      <img class="circles__item one" src="images/circle-light.svg" alt="" />
+      <img class="circles__item two" src="images/circle-light.svg" alt="" />
+      <!-- <img class="circles__item three" src="images/circle.svg" alt="" /> -->
+      <img class="circles__item four" src="images/circle-light.svg" alt="" />
+    </div>
+
+    <main class="main">
+      <div class="wrapper">
+        <h2 class="main__title">Request a demo</h2>
+        <form class="form" netlify>
+          <div class="form__group">
+            <label for="name">Full name</label>
+            <input class="form__input" type="text" name="fullname" id="name" />
+          </div>
+
+          <div class="form__group mt-3">
+            <label for="job">Job title</label>
+            <input class="form__input" type="text" name="Job" id="job" />
+          </div>
+
+          <div class="form__group mt-3">
+            <label for="job">Department</label>
+            <div class="form__group--radio">
+              <div class="form__group__item">
+                <input
+                  type="radio"
+                  class="sr-only"
+                  id="IT"
+                  name="dep"
+                  value="IT"
+                />
+                <label for="IT" onclick="show()">IT</label>
+              </div>
+
+              <div class="form__group__item">
+                <input
+                  type="radio"
+                  class="sr-only"
+                  id="Cybersecurity"
+                  name="dep"
+                  value="Cybersecurity"
+                />
+                <label for="Cybersecurity" onclick="show()"
+                  >Cybersecurity</label
+                >
+              </div>
+
+              <div class="form__group__item">
+                <input
+                  type="radio"
+                  class="sr-only"
+                  id="Compliance"
+                  name="dep"
+                  value="Compliance"
+                />
+                <label for="Compliance" onclick="show()">Compliance</label>
+              </div>
+
+              <div class="form__group__item">
+                <input
+                  type="radio"
+                  id="HR"
+                  class="sr-only"
+                  name="dep"
+                  value="HR"
+                />
+                <label for="HR" onclick="show()">HR</label>
+              </div>
+
+              <div class="form__group__item">
+                <input
+                  type="radio"
+                  id="other-choice"
+                  class="sr-only"
+                  name="dep"
+                  value="Other"
+                />
+                <label for="other-choice" onclick="show2()">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="form_added" class="form__group form__group--default">
+            <label for="other">Please Enter The Department Name</label>
+            <input class="form__input" type="text" name="dept" id="other" />
+          </div>
+
+          <label class="">Number of Employees</label>
+          <select class="select-css" name="Employees" id="Emp">
+            <option>Pick the number</option>
+            <option>&lt;25</option>
+            <option>25-100</option>
+            <option>101-500</option>
+            <option>501-1,000</option>
+            <option>&gt;1,000</option>
+          </select>
+          <div class="form__group mt-3">
+            <label for="url">Organization Website (URL)</label>
+            <input
+              class="form__input"
+              placeholder="www.example.com"
+              type="url"
+              name="website"
+              id="url"
+            />
+          </div>
+          <div class="form__group form__group--email">
+            <label for="email">Contact email</label>
+            <small class="form__group--hint"
+              >You must use an email with the same website URL. Example:
+              <span>mail@example.com</span></small
+            >
+            <input class="form__input" type="email" name="email" id="email" />
+          </div>
+          <button class="button button-primary full" type="submit">
+            submit
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="c-footer--inner">
+      <div class="wrapper">
+        <p>CyberShield © 2020</p>
+      </div>
+    </footer>
+
+    <script>
+      function show() {
+        document.getElementById('form_added').style.display = 'none'
+      }
+
+      function show2() {
+        document.getElementById('form_added').style.display = 'block'
+      }
+    </script>
+    <script>
+      ;(function () {
+        // Add event listener
+        document.addEventListener('mousemove', parallax)
+        const elem = document.querySelector('.circles')
+        const circle1 = document.querySelector('.circles__item.one')
+        const circle2 = document.querySelector('.circles__item.two')
+        const circle3 = document.querySelector('.circles__item.three')
+        const circle4 = document.querySelector('.circles__item.four')
+
+        function parallax(e) {
+          let _w = window.innerWidth / 2
+          let _h = window.innerHeight / 2
+          let _mouseX = e.clientX
+          let _mouseY = e.clientY
+
+          let _depth1 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          let _depth2 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+          // let _depth3 = `${50 - (_mouseX - _w) * 0.01}px, ${
+          //   50 - (_mouseY - _h) * 0.01
+          // }px`;
+          let _depth4 = `${50 - (_mouseX - _w) * 0.01}px, ${
+            50 - (_mouseY - _h) * 0.01
+          }px`
+
+          //let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+
+          // console.log(`scale(1.35) translate(${_depth1})`);
+
+          circle1.style.transform = `scale(1.35) translate(${_depth1})`
+          circle2.style.transform = `translate(${_depth2})`
+          // circle3.style.transform = `scale(2) translate(${_depth3})`;
+          circle4.style.transform = `scale(1.25) translate(${_depth4})`
+        }
+      })()
+    </script>
+  </body>
+</html>
