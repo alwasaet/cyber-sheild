@@ -35,15 +35,15 @@
     <main class="main">
       <div class="wrapper">
         <h2 class="main__title">اطلب عرض للبرنامج</h2>
-        <form class="form">
+        <form class="form" netlify>
           <div class="form__group">
             <label for="name">الاسم الكامل</label>
-            <input class="form__input" type="text" id="name" />
+            <input class="form__input" type="text" name="fullname" id="name" />
           </div>
 
           <div class="form__group mt-3">
             <label for="job">المسمى الوظيفي</label>
-            <input class="form__input" type="text" name="text" id="job" />
+            <input class="form__input" type="text" name="Job" id="job" />
           </div>
 
           <div class="form__group mt-3">
@@ -110,7 +110,7 @@
 
           <div id="form_added" class="form__group form__group--default">
             <label for="other"> الرجاء ادخال اسم القسم</label>
-            <input class="form__input" type="text" name="text" id="other" />
+            <input class="form__input" type="text" name="dept" id="other" />
           </div>
 
           <label class="">عدد الموظفين</label>
@@ -128,7 +128,7 @@
               class="form__input"
               placeholder="www.example.com"
               type="url"
-              name="text"
+              name="website"
               id="url"
             />
           </div>
